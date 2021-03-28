@@ -1,0 +1,16 @@
+- name: Home
+  path: "#top"
+  section_id: home
+- name: Qué Hacemos
+  path: "#about"
+  section_id: about
+- name: Servicios
+  path: "#services"
+  section_id: services
+- name: Equipo
+  path: "#team"
+  section_id: team
+  section_id: blog
+- name: Contacto
+  path: "#contact"
+  section_id: contact
