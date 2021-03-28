@@ -10,6 +10,8 @@
   
     {%- if path contains '://' -%}
       {%- assign href = path -%}
+    {%- else -%}
+      {%- assign href = path | relative_url -%}
     {%- endif -%}
 
     <link rel="stylesheet" href="{{ href }}">
