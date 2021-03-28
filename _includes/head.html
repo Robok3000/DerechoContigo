@@ -6,16 +6,22 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  {% for path in site.data.assets.css %}
-
-    {%- if path contains '://' -%}
-      {%- assign href = path -%}
-    {%- else -%}
-      {%- assign href = path | relative_url -%}
-    {%- endif -%}
-
-    <link rel="stylesheet" href="{{ href }}">
-  {% endfor %}
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!--====== Fontawesome pro css ======-->
+      <link rel="stylesheet" href="assets/css/all.css">
+      <!--====== Magnific Popup css ======-->
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">
+      <!--====== Slick css ======-->
+      <link rel="stylesheet" href="assets/css/slick.css">
+      <!--====== Slick css ======-->
+      <link rel="stylesheet" href="assets/css/slick-menu.css">
+      <!--====== Default css ======-->
+      <link rel="stylesheet" href="assets/css/default.css">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+      <!--====== Style css ======-->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!--====== Style css ======-->
+      <link rel="stylesheet" href="assets/css/responsive.css">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
