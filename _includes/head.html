@@ -14,7 +14,7 @@
       {%- assign href = path | relative_url -%}
     {%- endif -%}
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' }}">
+    <link rel="stylesheet" href="{{ href }}">
   {% endfor %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
